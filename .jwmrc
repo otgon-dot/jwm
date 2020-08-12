@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<JWM>
+ <!-- Root Menu -->
+    <!-- Left Click Menu -->
+    <RootMenu onroot="1">
+        <Program icon="utilities-terminal" label="Terminal">kitty</Program>
+        <Program icon="firefox" label="Browser">firefox</Program>
+            <Separator/>
+        <Include>$HOME/.config/jwm/menu/apps</Include>
+            <Separator/>
+        <Program label="Run">dmenu_run</Program>
+            <Separator/>
+            <Exit label="Exit" confirm="true" icon="gnome-logout"/>
+    </RootMenu>
+    <Tray x="0" y="-1" autohide="off">
+
+        <TrayButton label="Arch Linux">root:1</TrayButton>
+        <Spacer width="4"/>
+        <TrayButton label="#">showdesktop</TrayButton>
+        <Spacer width="4"/>
+	    <TrayButton label="FM">exec: thunar</TrayButton>
+	    <TrayButton label="BR">exec: firefox</TrayButton>
+	    <TrayButton label="XT">exec: xfce4-terminal</TrayButton>
+	    <Spacer width="4"/>
+
+        
+
+        <TaskList maxwidth="256"/>
+
+        <Dock/>
+	    <Spacer width="4"/>
+        <Clock format="| %Y/%m/%d %A - %H:%M"><Button mask="123">exec:orage</Button></Clock>
+        
+    <IconPath>
+        /usr/share/icons/wm-icons/32x32-aquafusion
+    </IconPath>
+
+    <!-- Virtual Desktops -->
+    <!-- Desktop tags can be contained within Desktops for desktop names. -->
+    <Desktops width="4" height="1">
+        <!-- Default background. Note that a Background tag can be
+              contained within a Desktop tag to give a specific background
+              for that desktop.
+         -->
+        <!-- <Background type="solid">#111111</Background> -->
+	<Background type="command">feh --bg-fill ~/Pictures/117125569_1071479893294402_8868163687299156262_n.jpg</Background>
+    </Desktops>
+
+    <!-- Double click speed (in milliseconds) -->
+    <DoubleClickSpeed>400</DoubleClickSpeed>
+
+    <!-- Double click delta (in pixels) -->
+    <DoubleClickDelta>2</DoubleClickDelta>
+
+    <!-- The focus model (sloppy or click) -->
+    <FocusModel>click</FocusModel>
+
+    <!-- The snap mode (none, screen, or border) -->
+    <SnapMode distance="10">border</SnapMode>
+
+    <!-- The move mode (outline or opaque) -->
+    <MoveMode>opaque</MoveMode>
+
+    <!-- The resize mode (outline or opaque) -->
+    <ResizeMode>opaque</ResizeMode>
+
+</JWM>

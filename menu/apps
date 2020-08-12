@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<JWM>
+
+	<!--Hardcoded launchers for easy access after the JWM installation.-->
+	<Menu label="Apps">
+		<Menu label="Terminal Emulator">
+			<Program label="Kitty">kitty</Program>
+		</Menu>
+		<Menu label="File Manager">
+			<Program label="Thunar">thunar</Program>
+
+		</Menu>
+		<Menu label="Web Browser">
+			<Program label="Firefox">firefox || firefox-esr</Program>
+		</Menu>
+		<Menu label="Text Editor">
+			<Program label="vim">vim</Program>
+			<Program label="subl">subline text</Program>
+
+		</Menu>
+	</Menu>
+</JWM>
